@@ -107,9 +107,10 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: nowrap;
 }
 .logo img{
-    max-width:20%;
+    max-width:30%;
 }
 
 .hamburger-menu{
@@ -535,6 +536,7 @@ padding: 1rem;
         width: 50%;
         margin-right: 2rem;
     }
+    
     .input-group-wrap .input-group:last-child{
     margin-right: 0;
     }
@@ -564,12 +566,13 @@ padding: 1rem;
 @media screen and (min-width: 1000px) {
 
     section:not(.booking){
-padding: 10rem;
+      padding: 10rem;
     }
-
+    
     .hamburger-menu{
         display: none;
     }
+    
     .nav-list{
         position: initial;
         width: initial;
@@ -630,10 +633,8 @@ padding: 10rem;
 }
 
 }
-
-@media screen and  (min-width:1200px{
+/* @media screen and  (min-width:1200px){
     .book-form .input-group:first-child{
         flex: 0 0 20;
     }
-}
-
+} */
